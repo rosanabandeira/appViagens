@@ -1,5 +1,6 @@
-package ui.activity;
+package android.studio.viagens.ui.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.studio.viagens.R;
 import android.studio.viagens.dao.PacoteDAO;
@@ -23,6 +24,8 @@ public class ListaPacotesActivity extends AppCompatActivity {
         setTitle(TITULO_APPBAR);
         configuraLista();
 
+        Intent intent = new Intent(this, ResumoPacoteActivity.class);
+        startActivity(intent);
     }
 
     private void configuraLista() {
