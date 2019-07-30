@@ -25,9 +25,6 @@ public class PagamentoActivity extends AppCompatActivity {
 
         mostraPreco(pacoteSaoPaulo);
 
-
-
-
     }
 
     private void mostraPreco(Pacote pacote) {
