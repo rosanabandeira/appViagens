@@ -50,7 +50,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pagamento_preco_pacote"
-        android:importantForAutofill="no" tools:targetApi="o" />
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/pagamento_mes_cartao"
@@ -62,7 +62,7 @@
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="@+id/pagamento_cvc_cartao"
         app:layout_constraintStart_toStartOf="@id/pagamento_numero_cartao"
-        android:importantForAutofill="no" tools:targetApi="o" />
+        android:autofillHints="" />
 
 
     <EditText
@@ -75,21 +75,21 @@
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="@+id/pagamento_cvc_cartao"
         app:layout_constraintStart_toEndOf="@id/pagamento_mes_cartao"
-        android:importantForAutofill="no" tools:targetApi="o"/>
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/pagamento_cvc_cartao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:drawableLeft="@drawable/ic_cvc_cartao_de_credito"
+        android:drawablestart="@drawable/ic_cvc_cartao_de_credito"
         android:hint="@string/cvc_pagamento"
         android:inputType="number"
         android:maxLength="3"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@id/pagamento_numero_cartao"
         app:layout_constraintTop_toBottomOf="@id/pagamento_numero_cartao"
-        android:drawableStart="@drawable/ic_cvc_cartao_de_credito"
-        android:importantForAutofill="no" tools:targetApi="o" />
+        android:autofillHints=""
+        android:drawableStart="@drawable/ic_cvc_cartao_de_credito" />
 
     <EditText
         android:id="@+id/pagamento_nome_no_cartao"
@@ -101,7 +101,7 @@
         app:layout_constraintEnd_toEndOf="@+id/pagamento_cvc_cartao"
         app:layout_constraintStart_toStartOf="@+id/pagamento_mes_cartao"
         app:layout_constraintTop_toBottomOf="@+id/pagamento_cvc_cartao"
-        android:importantForAutofill="no" tools:targetApi="o" />
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/pagamento_botao_finaliza_compra"

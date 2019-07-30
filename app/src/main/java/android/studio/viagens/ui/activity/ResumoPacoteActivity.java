@@ -1,5 +1,6 @@
 package android.studio.viagens.ui.activity;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.studio.viagens.R;
@@ -33,6 +34,9 @@ public class ResumoPacoteActivity extends AppCompatActivity {
         mostraDias(pacoteSaoPaulo);
         mostraPreco(pacoteSaoPaulo);
         mostraData(pacoteSaoPaulo);
+
+        Intent intent = new Intent(this, PagamentoActivity.class);
+        startActivity(intent);
     }
 
     private void mostraData(Pacote pacote) {
@@ -63,4 +67,5 @@ public class ResumoPacoteActivity extends AppCompatActivity {
         TextView local = findViewById(R.id.resumo_pacote_local);
         local.setText(pacote.getLocal());
     }
+
 }
